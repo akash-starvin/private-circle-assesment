@@ -1,0 +1,9 @@
+<div class="container">
+  <input
+    class="container__input"
+    type="text"
+    [(ngModel)]="searchInput"
+    (ngModelChange)="updateValueChanged($event)"
+    placeholder="Search"
+  />
+</div>

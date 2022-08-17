@@ -1,0 +1,42 @@
+@use "../../../assets/scss/variables.scss";
+
+.container {
+  width: 25vw;
+
+  &__add-desc {
+    display: flex;
+    width: 100%;
+    margin: 16px 24px 8px;
+    padding: 20px 16px;
+    gap: 16px;
+    background-color: variables.$background-gray;
+
+    span {
+      color: variables.$gray;
+    }
+
+    button {
+      color: variables.$primary;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      color: variables.$secondary;
+      margin: 10px 32px;
+      cursor: pointer;
+    }
+  }
+}
+
+span,
+button {
+  font-size: 14px;
+  font-weight: 600;
+}

@@ -1,0 +1,60 @@
+@use "../../../assets/scss/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px 0;
+  border-bottom: 1px solid variables.$light-gray;
+
+  &__date {
+    font-size: 14px;
+    font-weight: 400;
+    color: variables.$gray;
+    padding: 0 32px;
+    white-space: nowrap;
+  }
+
+  &__list-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: variables.$black;
+    padding: 0 0;
+    width: 40%;
+  }
+
+  &__count {
+    font-size: 14px;
+    font-weight: 600;
+    color: variables.$black;
+    padding: 0 0 0 106px;
+    text-align: right;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 16px;
+    padding: 0 36px;
+  }
+
+  &__button-details {
+    font-weight: 600;
+    color: variables.$primary;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 56px;
+    padding: 8px 16px;
+    border-bottom: 3px solid variables.$white;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: variables.$background-gray;
+
+    .container__button-details {
+      background-color: variables.$white;
+      border-bottom: 3px solid variables.$primary;
+    }
+  }
+}

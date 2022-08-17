@@ -1,0 +1,37 @@
+<div class="container">
+  <span class="container__date">{{ card.date }}</span>
+  <span class="container__list-name">{{ card.name }}</span>
+  <span class="container__count">{{ card.entitiesCount }}</span>
+  <div class="container__actions">
+    <img
+      src="../../../assets/icons/icon-mail.png"
+      alt="icon mail"
+      height="24"
+      width="24"
+    />
+    <img
+      src="../../../assets/icons/icon-share.png"
+      alt="icon share"
+      height="24"
+      width="24"
+    />
+    <img
+      src="../../../assets/icons/icon-pencil.png"
+      alt="icon write"
+      height="24"
+      width="24"
+    />
+    <img
+      src="../../../assets/icons/icon-trash.png"
+      alt="icon delete"
+      height="24"
+      width="24"
+    />
+  </div>
+  <button
+    class="container__button-details"
+    (click)="viewDetails(card.entitiesList)"
+  >
+    Details
+  </button>
+</div>

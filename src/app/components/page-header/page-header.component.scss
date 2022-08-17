@@ -1,0 +1,16 @@
+@use "../../../assets/scss/variables.scss";
+
+.container {
+  display: flex;
+  justify-content: end;
+  padding: 24px 36px;
+  background-color: variables.$background-gray;
+
+  &__input {
+    width: 40vw;
+    height: 36px;
+    padding: 16px;
+    border: 1px solid variables.$input-gray;
+    outline-color: variables.$secondary;
+  }
+}

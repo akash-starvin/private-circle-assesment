@@ -1,0 +1,30 @@
+@use "../../../assets/scss/variables.scss";
+
+.container {
+  overflow-y: scroll;
+
+  &__header {
+    display: flex;
+    border-bottom: 1px solid variables.$light-gray;
+
+    &__title {
+      color: variables.$gray;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 16px 0;
+      margin: 0;
+    }
+  }
+
+  &__body {
+    width: 70vw;
+  }
+}
+
+.p-36 {
+  padding: 16px 36px;
+}
+
+.w-60 {
+  width: 40%;
+}

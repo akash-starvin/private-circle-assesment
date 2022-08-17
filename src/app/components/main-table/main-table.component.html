@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="container__header">
+    <h3 class="container__header__title p-36">Date</h3>
+    <h3 class="container__header__title w-60">List Name</h3>
+    <h3 class="container__header__title p-36">No. of Entities</h3>
+    <h3 class="container__header__title">Actions</h3>
+  </div>
+  <div class="container__body">
+    <div *ngFor="let card of filtredTableList">
+      <app-table-card [card]="card"></app-table-card>
+    </div>
+  </div>
+</div>
